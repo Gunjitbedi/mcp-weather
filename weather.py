@@ -77,7 +77,7 @@ async def get_forecast(latitude: float, longitude: float) -> str:
     return "\n---\n".join(forecasts)
 
 
-@mcp.prompt
+@mcp.prompt()
 def plan_the_evening(text: str) -> str:
     """Plan the evening based on the weather forecast."""
     return f"Plan the evening based on the weather forecast:\n\n{text}"
